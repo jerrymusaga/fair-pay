@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ConnectModal from "../modals/connectModal";
 import { useAuth } from "../../context/AuthContext";
 import AccountDetails from "../AccountDetails";
+import Button from "../common/Button";
 
 const Header = () => {
   const { isConnected, address } = useAuth();
@@ -31,6 +32,9 @@ const Header = () => {
           <Link to="/howitworks" className="hover:text-blue-600 text-xl">
             How it Works
           </Link>
+          <Link to="/faucet" className="hover:text-blue-600">
+            Faucet
+          </Link>
         </nav>
 
         <div className="flex items-center  ">
@@ -39,12 +43,12 @@ const Header = () => {
               <AccountDetails />
             </div>
           ) : (
-            <button
+            <Button
               onClick={() => setModalOpen(true)}
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              variant="primary"
             >
               Get Started
-            </button>
+            </Button>
           )}
         </div>
 
