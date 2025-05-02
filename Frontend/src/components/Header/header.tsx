@@ -21,7 +21,7 @@ const Header = () => {
           <img src="/lock.png" alt="" />
           </div>
          <div className="mt-6 text-gray-600">
-         Fair<span className="text-gray-600">Pay</span>
+         Fair<span className=" text-blue-400">Pay</span>
          </div>
         </Link>
 
@@ -32,7 +32,7 @@ const Header = () => {
           <Link to="/howitworks" className="hover:text-blue-600 text-xl">
             How it Works
           </Link>
-          <Link to="/faucet" className="hover:text-blue-600">
+          <Link to="/faucet" className="hover:text-blue-600 text-xl">
             Faucet
           </Link>
         </nav>
